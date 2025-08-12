@@ -63,14 +63,12 @@
 /* Base Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   body {
-	margin:0;
-	padding:0;
-	background-color:#ffffff;
-	color:#1a1a1a;
-	font-family:"Open Sans",system-ui;
-	font-size:1.125rem;     				/* 18px */
-    font-weight:400;
-	line-height:1.6;
+	body {
+    background-image: url("YouTube-Banner_ Lustige Autoaufkleber-GIFs.gif");
+    background-size: cover; /* Adjust as needed: cover, contain, auto */
+    background-repeat: no-repeat; /* Adjust as needed: no-repeat, repeat */
+    background-position: center center; /* Adjust as needed */
+}
 }
 
 /* Typography
