@@ -64,7 +64,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   body {
 	body {
-    background-image: url("images/download.gif");
+    background-image: url("download.gif");
     background-size: cover; /* Adjust as needed: cover, contain, auto */
     background-repeat: no-repeat; /* Adjust as needed: no-repeat, repeat */
     background-position: center center; /* Adjust as needed */
