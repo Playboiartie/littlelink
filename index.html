@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Your LittleLink</title>
+<title>Artie</title>
 <style>
   body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     background-image: url("images/IMG_7706.JPG"); /* Replace with your image path */
-    background-repeat: no-repeat; /* Optional: Adjust repetition as needed */
-    background-size: cover;      /* Optional: Adjust sizing as needed */
-    background-attachment: fixed; /* Optional: Keep the background fixed during scrolling */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    body {
+      background-size: 110%; /* Slight zoom-in on mobile */
+      background-position: center top; /* Keeps important parts visible */
+    }
   }
 </style>
 </head>
