@@ -3,25 +3,53 @@
 <head>
 <title>Artie</title>
 <style>
-  body {
+  /* Make sure the page has no margins */
+  body, html {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Ensure it covers full screen */
-    background-image: url("images/IMG_7706.JPG"); /* Replace with your image path */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+    height: 100%;
+    overflow: hidden; /* Hide scrollbars */
   }
 
-  /* Mobile adjustments */
-  @media (max-width: 768px) {
-    body {
-      background-size: cover; /* Ensure full coverage */
-      background-attachment: scroll; /* Fix iOS/Safari bug */
-      background-position: center top;
+  /* Video background styling */
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Makes it fill like background-size: cover */
+    z-index: -1; /* Put behind content */
   }
+
+  /* Content on top of the video */
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 40vh; /* Center vertically */
   }
+</style>
+</head>
+<body>
+
+<!-- Video background -->
+<video autoplay muted loop playsinline class="video-background">
+  <source src="Videos/3D Motion Design.mp4" type="video/mp4">
+  <source src="Videos/3d Motion Design web.webp" type="video/webm">
+  Your browser does not support HTML5 video.
+</video>
+
+<!-- Example content -->
+<div class="content">
+  Your Site Content Here
+</div>
+
+</body>
+</html>
+  
 </style>
 </head>
 <body>
