@@ -6,7 +6,7 @@
   body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh; /* Ensure it covers full screen */
     background-image: url("images/IMG_7706.JPG"); /* Replace with your image path */
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,9 +17,10 @@
   /* Mobile adjustments */
   @media (max-width: 768px) {
     body {
-      background-size: 110%; /* Slight zoom-in on mobile */
-      background-position: center top; /* Keeps important parts visible */
-    }
+      background-size: cover; /* Ensure full coverage */
+      background-attachment: scroll; /* Fix iOS/Safari bug */
+      background-position: center top;
+  }
   }
 </style>
 </head>
