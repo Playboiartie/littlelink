@@ -1,148 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-dark" lang="en">
 <head>
-<title>PlayboiArtie</title>
-<style>
-  /* Make sure the page has no margins */
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* Hide scrollbars */
-  }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playboi Artie</title>
+  <link rel="icon" type="image/x-icon" href="/images/avatar.jpg">
+  <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
+  <meta name="keywords" content="your name, industry, and specialties">
+  <meta rel="canonical" href="https://playboiartie.com">
+  <meta name="author" content="Artie Davis">
 
-  /* Video background styling */
-  .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover; /* Makes it fill like background-size: cover */
-    z-index: -1; /* Put behind content */
-  }
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brands.css">
 
-  /* Content on top of the video */
-  .content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    margin-top: 40vh; /* Center vertically */
-  }
-</style>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Video background styling */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* behind all content */
+      pointer-events: none; /* don't block clicks */
+    }
+  </style>
 </head>
-<body>
-
-<!-- Video background -->
-<video autoplay muted loop playsinline class="video-background">
-  <source src="Videos/3D Motion Design.mp4" type="video/mp4">
-  <source src="Videos/3d Motion Design web.webp" type="video/webm">
-  Your browser does not support HTML5 video.
-</video>
-</body>
-</html>
-  
-</style>
-</head>
-<body>
-    <!-- Your LittleLink content goes here -->
-</body>
-</html>
-<!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
--->
-
-<html class="theme-dark" lang="en"> <!-- Update`class="theme-auto" with your preference -->
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
-    <title>Playboi Artie</title>
-    <link rel="icon" type="image/x-icon" href="/images/avatar.jpg"> <!-- Update this with your own favicon -->
-
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
-
-    <!-- Keywords -->
-    <meta name="keywords" content="your name, industry, and specialties">
-
-    <!-- Canonical URL - Helps prevent duplicate content issues -->
-    <meta rel="canonical" href="https://playboiartie.com">
-
-    <!-- Author Information -->
-    <meta name="author" content="Your Name">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
-
-    <!-- LittleLink Extended Stylesheet (Optional) -->
-    <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
-    <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
-         Remove comments if you've added LittleLink Extended dependencies -->
-
-  </head>
 
 <body>
+  <!-- Video background -->
+  <video autoplay muted loop playsinline class="video-background">
+    <source src="Videos/3D Motion Design.mp4" type="video/mp4">
+    <source src="Videos/3D Motion Design.webm" type="video/webm">
+    Your browser does not support HTML5 video.
+  </video>
 
-    <div class="container">
-        <div class="column">
+  <!-- LittleLink content -->
+  <div class="container">
+    <div class="column">
+      <img class="avatar avatar--rounded" src="images/avatar.jpg" srcset="images/avatar@2x.jpg 2x" alt="LittleLink">
+      <h1><div>Playboi Artie</div></h1>
+      <p></p>
 
-            <!--
-              By default, the Avatar is rounded. Use the following:
-              - avatar--rounded: Automatically rounds the image
-              - avatar--soft: Slightly rounds the image
-              - avatar--none: Removes any rounding
-
-              Be sure to replace the src with your own image path and update the alt text
-            -->
-            <img class="avatar avatar--rounded" src="images/avatar.jpg" srcset="images/avatar@2x.jpg 2x" alt="LittleLink">
-
-            <!-- Replace with your name or brand -->
-            <h1>
-              <div>Playboi Artie</div>
-            </h1>
-
-            <!-- Add a short description about yourself or your brand -->
-            <p></p>
-
-            <!-- All your buttons go here -->
-            <div class="button-stack" role="navigation">
-
-            
-              <!-- Instagram -->
-              <a class="button button-instagram" href="https://www.instagram.com/playboiartie/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-              
-              <!-- Snapchat -->
-              <a class="button button-snapchat" href="https://t.snapchat.com/G8t2YLIF" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/snapchat.svg" alt="Snapchat Logo">Snapchat</a>
-
-              <!-- Spotify -->
-              <a class="button button-spotify" href="https://open.spotify.com/user/uf1sg491xbcuo2e5wqermaqdx?si=97ee2f9da0034e42" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/spotify.svg" alt="Spotify Logo">Spotify</a>
-
-              <!-- Steam -->
-              <a class="button button-steam" href="https://steamcommunity.com/id/playboiartie/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/steam.svg" alt="Steam Logo">Steam</a>
-              
-              <!-- YouTube -->
-              <a class="button button-yt" href="https://www.youtube.com/@PlayboiArtie" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/youtube.svg" alt="YouTube Logo">YouTube</a>
-
+      <div class="button-stack" role="navigation">
+        <a class="button button-instagram" href="https://www.instagram.com/playboiartie/" target="_blank" rel="noopener">
+          <img class="icon" src="images/icons/instagram.svg" alt="">Instagram
+        </a>
+        <a class="button button-snapchat" href="https://t.snapchat.com/G8t2YLIF" target="_blank" rel="noopener">
+          <img class="icon" src="images/icons/snapchat.svg" alt="">Snapchat
+        </a>
+        <a class="button button-spotify" href="https://open.spotify.com/user/uf1sg491xbcuo2e5wqermaqdx?si=97ee2f9da0034e42" target="_blank" rel="noopener">
+          <img class="icon" src="images/icons/spotify.svg" alt="">Spotify
+        </a>
+        <a class="button button-steam" href="https://steamcommunity.com/id/playboiartie/" target="_blank" rel="noopener">
+          <img class="icon" src="images/icons/steam.svg" alt="">Steam
+        </a>
+        <a class="button button-yt" href="https://www.youtube.com/@PlayboiArtie" target="_blank" rel="noopener">
+          <img class="icon" src="images/icons/youtube.svg" alt="">YouTube
+        </a>
       </div>
 
-      <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
-      <footer>
-        
-      </footer>
-
+      <footer></footer>
     </div>
   </div>
-
 </body>
-
 </html>
