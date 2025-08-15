@@ -631,3 +631,10 @@
 	--button-background:#0B5CFF;
   --button-border:1px solid #FFFFFF;
 }
+
+/* Ledger */
+.button-Ledger {
+	--button-text:#ffffff;
+	--button-background:#000000;
+  --button-border:1px solid #FFFFFF;
+}
